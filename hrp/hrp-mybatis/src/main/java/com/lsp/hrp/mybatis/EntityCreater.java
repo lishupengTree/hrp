@@ -19,7 +19,7 @@ import java.sql.Types;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-@Component
+
 public class EntityCreater implements InitializingBean {
 
 	public static final String ENTER = "\n";

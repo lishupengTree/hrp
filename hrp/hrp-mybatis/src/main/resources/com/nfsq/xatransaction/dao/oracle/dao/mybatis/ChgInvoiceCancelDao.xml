@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nfsq.xatransaction.dao.oracle.dao.mybatis.ChgInvoiceCancelDao">
+    <resultMap id="entityResultMap" type="ChgInvoiceCancel">
+        <id property="id" column="id" />
+        <result property="hosnum" column="hosnum" />
+        <result property="invoiceid" column="invoiceid" />
+        <result property="invoiceno" column="invoiceno" />
+        <result property="cancelleddate" column="cancelleddate" />
+        <result property="operator" column="operator" />
+        <result property="operatorname" column="operatorname" />
+        <result property="canceldes" column="canceldes" />
+        <result property="invoicetype" column="invoicetype" />
+        <result property="gentype" column="gentype" />
+        <result property="detailids" column="detailids" />
+        <result property="reportdate" column="reportdate" />
+        <result property="reportid" column="reportid" />
+    </resultMap>
+
+</mapper>
