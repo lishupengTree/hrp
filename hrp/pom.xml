@@ -13,6 +13,7 @@
         <module>hrp-common</module>
         <module>hrp-service</module>
         <module>hrp-web</module>
+        <module>hrp-mybatis</module>
     </modules>
 
     <properties>
