@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>所有功能</title>
+</head>
+<body>
+
+<div class="top">
+    #include(../top.html)
+</div>
+
+<input type="hidden" id="validto_warning" value="${validto_warning }"/>
+<div id="middle_area">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td id="left_area" width="230" valign="top" align="center">
+                <div class="ysz1" style="color: #6ba3b6;" id="menuname">${login_menus[systemid].name}</div>
+                <div id="left_area_tree" style="overflow-y:auto;margin-left: 5px;width: 220px;">
+                    <ul id="menuTree" class="tree"></ul>
+                </div>
+
+            </td>
+            <!-- 1 -->
+            <td id="middle_line" width="8px"
+                style="background-image:url(img/ysz2.gif); background-repeat:repeat-y; background-position:center">
+                <img src="img/ysz3.gif"/>
+            </td>
+            <td id="right_area" style="padding: 1px;">
+                <div id="tab_bar" style="height:100%;" valign="top"></div>
+                <div id="mainArea" style="display:none;">
+                    <iframe id="main_iframe" width="100%" height="600" src="" topmargin="0" leftmargin="0"
+                            marginheight="0" marginwidth="0" frameborder="no" style="overflow-y:auto;overflow-x:hidden;"
+                    ></iframe>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="hidden_div" style="display: none;">
+    <iframe id="hidden_iframe" width="100%" height="100%" src="" topmargin="0" leftmargin="0"
+            marginheight="0" scrolling="no" marginwidth="0" frameborder="no"></iframe>
+</div>
+<input id="ortype" value="${login_hospital.orgtype}" type="hidden"/>
+
+</body>
+</html>

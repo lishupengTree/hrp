@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<!-- user start -->
+	<!--<dubbo:reference interface="com.lanniuh.rental.module.api.service.user.UserService"  id="userService" timeout="10000" check="false"/>-->
+	<!--<dubbo:reference interface="com.lanniuh.rental.module.api.service.user.UserPermService" id="userPermService" timeout="10000" check="false"/>-->
+	<!--- user end -->
+
+
+</beans>

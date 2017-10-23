@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tools>
+    <toolbox scope="application">
+        <!--<tool key="droplist" class="com.lanniuh.rental.web.velocity.DroplistTool"/>-->
+        <!--<tool key="shiro" class="com.lanniuh.rental.web.velocity.Permission"/>-->
+    </toolbox>
+</tools>
