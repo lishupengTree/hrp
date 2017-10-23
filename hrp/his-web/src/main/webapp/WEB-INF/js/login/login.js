@@ -12,7 +12,7 @@ function getDepts(key) {
         type: "get",
         data: "key=" + key + "&time=" + new Date().getMilliseconds(),
         error: function () {
-            alert("获取部门失败");
+            console.log("获取部门失败")
         },
         success: function (reply) {
             if (reply == '[]') {
@@ -52,7 +52,7 @@ function getShaynes() {
         type: "get",
         data: "deptcode=" + deptcode + "&time=" + new Date().getMilliseconds(),
         error: function () {
-            alert("获取部门失败");
+            console.log('获取部门失败')
         },
         success: function (reply) {
             if (reply == '[]') {
