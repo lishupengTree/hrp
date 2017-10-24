@@ -16,6 +16,15 @@ import java.util.List;
 public class StrUtil {
 
     /**
+     * 判断字符串是否为空，或者为null
+     * @param str
+     * @return
+     */
+    public static boolean isEmpty(String str){
+        return str == null || "".equals(str);
+    }
+
+    /**
      * 如果str为目标值goal，则转为默认值def
      * @param str
      * @param goal
