@@ -28,6 +28,7 @@
     <mvc:resources mapping="/css/**" location="WEB-INF/css/"/>
     <mvc:resources mapping="/imgs/**" location="WEB-INF/imgs/"/>
     <mvc:resources mapping="/libs/**" location="WEB-INF/libs/"/>
+    <mvc:resources mapping="/file/**" location="WEB-INF/file/"/>
 
     <!-- 支持返回json(避免IE在ajax请求时，返回json出现下载 ) -->
     <bean id="fastJsonHttpMessageConverter" class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
@@ -72,9 +73,9 @@
     </bean>
 
     <!--全局异常拦截解析器-->
-    <!--<beans:bean id="hugExceptionResolver" class="com.lanniuh.rental.web.helper.HugExceptionResolver">-->
-        <!--<beans:property name="messageConverter" ref="fastJsonHttpMessageConverter"/>-->
-    <!--</beans:bean>-->
+    <beans:bean id="hugExceptionResolver" class="com.lsp.his.web.security.HugExceptionResolver">
+        <beans:property name="messageConverter" ref="fastJsonHttpMessageConverter"/>
+    </beans:bean>
 
     <!-- 定时器配置
     task:executor/@pool-size：可以指定执行线程池的初始大小、最大大小

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lsp.his.dao.system.BasSystemMenuDao">
+    <resultMap id="entityResultMap" type="com.lsp.his.entity.system.BasSystemMenu">
+        <id property="id" column="id" />
+        <result property="pid" column="pid" />
+        <result property="name" column="name" />
+        <result property="url" column="url" />
+        <result property="image" column="image" />
+        <result property="menuType" column="menu_type" />
+        <result property="openType" column="open_type" />
+        <result property="indexNo" column="index_no" />
+        <result property="hotkeys" column="hotkeys" />
+        <result property="defaultOpen" column="default_open" />
+    </resultMap>
+
+</mapper>
