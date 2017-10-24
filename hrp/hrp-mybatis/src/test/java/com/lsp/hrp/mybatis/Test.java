@@ -12,6 +12,16 @@ public class Test extends BaseTest {
     @Autowired
     EntityCreater entityCreater;
 
+
+    /**
+     * 生成dao 代码
+     * @throws Exception
+     */
+    @org.junit.Test
+    public void entityCreater() throws Exception{
+        entityCreater.create();
+    }
+
     @org.junit.Test
     public void aVoid(){
 //        basRoleDao.get111();
@@ -24,8 +34,5 @@ public class Test extends BaseTest {
 //        basRole.setId(Long.parseLong("074C5AA0C4A746988031C0509D3D682D"));
     }
 
-    @org.junit.Test
-    public void test() throws Exception{
-        entityCreater.create();
-    }
+
 }
