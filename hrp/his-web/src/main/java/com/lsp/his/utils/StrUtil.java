@@ -39,6 +39,10 @@ public class StrUtil {
         }
     }
 
+    public static String objToStr(Object obj){
+        return  obj == null ? "" : obj.toString();
+    }
+
     /**
      * 如果str为null，转为默认值def
      * @param str

@@ -73,9 +73,9 @@
     </bean>
 
     <!--全局异常拦截解析器-->
-    <!--<beans:bean id="hugExceptionResolver" class="com.lanniuh.rental.web.helper.HugExceptionResolver">-->
-        <!--<beans:property name="messageConverter" ref="fastJsonHttpMessageConverter"/>-->
-    <!--</beans:bean>-->
+    <beans:bean id="hugExceptionResolver" class="com.lsp.his.web.security.HugExceptionResolver">
+        <beans:property name="messageConverter" ref="fastJsonHttpMessageConverter"/>
+    </beans:bean>
 
     <!-- 定时器配置
     task:executor/@pool-size：可以指定执行线程池的初始大小、最大大小
